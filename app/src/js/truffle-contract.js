@@ -10,7 +10,7 @@ if (typeof Web3 == "object" && Object.keys(Web3).length == 0) {
   Web3 = global.Web3;
 }
 
-var contract = (function(module) {
+var contract = (async function(module) {
 
   // Planned for future features, logging, etc.
   function Provider(provider) {
@@ -413,13 +413,14 @@ var contract = (function(module) {
       return contract;
     },
 
-    deployed: function() {
+    deployed: function () {
       var self = this;
       var val = {}; //this.at(this.address);
 
+
       // Add thennable to allow people to opt into new recommended usage.
-      val.then = function(fn) {
-        return self.detectNetwork().then(function() {
+      val.then = function (fn) {
+        return self.detectNetwork().then(function () {
           // We don't have a network config for the one we found
           if (self._json.networks[self.network_id] == null) {
             throw new Error(self.contract_name + " has not been deployed to detected network (network/artifact mismatch)");

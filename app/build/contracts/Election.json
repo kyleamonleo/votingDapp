@@ -1324,12 +1324,12 @@
     "1669883264241": {
       "events": {},
       "links": {},
-      "address": "0x476EE69E97AC27c387f6Ea581752a8cfd70120A0",
-      "transactionHash": "0x4c1fe555a837b04ad4e70f6ddde1450a108dfd653ebb56ec569b59419eaefa2c"
+      "address": "0xa1fe740521f91C180e6246291e98F618541F35cc",
+      "transactionHash": "0x63865991ad9f815462d735f7e395562acba3360fea08de28ea000514dd44718a"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2022-12-01T10:54:33.036Z",
+  "updatedAt": "2022-12-01T11:57:22.462Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
